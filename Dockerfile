@@ -1,7 +1,7 @@
 FROM debian
 
 RUN apt-get update &&  \
-    apt-get install -y ssl-certificates && \
+    apt-get install -y ca-certificates && \
     apt-get clean && \
     apt-get autoclean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
